@@ -1,0 +1,28 @@
+Requisitos para levantar proyecto
+
+	1. Tener instalado JDK superior a la version 8
+	2. Tener instalado SDK
+	3. Contar con emulador o dispositivo Android devisado en consola
+	4. Tener instalado Selenium 4.0
+	5. Tener instalado Python 3
+	6. Configurar las VAriables de entorno, usar de guia este tutorial https://www.youtube.com/watch?v=i30s86SrFe0&t=367s
+	7. Instalar pytest a traves de consola con el comando pip install pytest
+	8. confirmar si la version de chrome en tu navegador es la Versión 98.0.4758.102 de ser diferente a dicha version, se debera actualizar el archivo chromedriver.exe, ubicado en la carpeta recursos debe ser actualizado a la version de chrome que posea instalada 
+
+Como incializarlo
+
+	1.Ejecutar appium server con el Host: localhost port: 4723
+	2. Conectar disposito mediante USB a la PC, luego en consola correr comando adb devices -l para verifiar el nameDevice del telefono conectado
+	3. en el archivo login.Py en el metodo "def setUp" cambiar el valor del campo "appium:deviceName": "dandelion_global " por el nameDevice que obtuvimos del paso anterior
+	4.Cambiar todas las rutas de los siguientes archivos, para facilitar la busqueda en el IDE ingresar comando Ctrl + F y buscar por nombre esto:
+		a. filesheet = "C:[/Users/user/Documents/Habits.ai/Automatizacion]/qa_automation/recursos/Licencias.xlsx"
+		   Loque se encuentre encerrado en "[]" debe ser remplazado por la raiz de la ruta donde contengan descargado el repositorio
+		b. driver.get_screenshot_as_file("C:[\\Users\\user\\Documents\\Habits.ai\\Automatizacion]\\qa_automation\\recursos\\screenshots\\RE01_FormularioLleno.png")
+		   Lo que se encuentre encerrado en "[]" debe ser remplazado por la raiz de la ruta donde contengan descargado el repositorio
+	5. Correr el proyecto
+
+
+IMPORTANTE: LA CARPETA DE RECURSOS DEBEN DESCOMPRIMIR USANDO LA OPCION EXTRAER AQUI
+
+
+	

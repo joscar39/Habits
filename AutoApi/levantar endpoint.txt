@@ -1,0 +1,24 @@
+1- Abrir consola
+	ejecutar el comando para activar mongo.exe "C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe"
+
+
+2- Abrir vscode y correr los repositorios
+	arrastrar archivo de backend localizado en C:\Users\user\Documents\Proyectos
+
+	correr comando npm run dev
+
+
+
+3- Abrir consola y ejecutar el archivo ngrok arrastrandolo a la consola y agregando la ruta "http 4041"
+
+4- luego de desplegar ngrok se debe entrar al navegador e ingresar a localhost:4040
+
+
+
+__________________________________ EN CONSOLA _______________________________
+
+1 abrir vs code, arrastrar archivo console2
+
+2 ejecutar npm start
+
+3 entrar a la web con localhost:3030
